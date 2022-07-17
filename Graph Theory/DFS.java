@@ -61,6 +61,25 @@ public class DFS {
         }
     }
 
+    /* Adjacency Matrix */
+
+    /**
+     * 
+     * @param graph
+     * @param visited
+     * @param root
+     */
+    public static void dfsPostOrder(int[][] graph, int[] visited, int root) {
+        if (visited[root] == 1)
+            return;
+        visited[root] = 1;
+        for (int i = 0; i < graph[root].length; i++) {
+            if (graph[root][i] == 1)
+                dfs(graph, visited, i);
+        }
+        System.out.println(root);
+    }
+
     /* Adjacency List */
     public static void dfsAdjacenceyList(List<Integer>[] graph, int[] visited, int root) {
         if (visited[root] == 1)

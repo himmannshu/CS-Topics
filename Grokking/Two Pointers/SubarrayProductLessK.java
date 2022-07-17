@@ -31,4 +31,9 @@ public class SubarrayProductLessK {
 	public static void main(String[] args) {
 		
 	}
+
+	public static int numSubarrayProductLessThanK(int[] nums, int k) {
+
+
+    }
 }
