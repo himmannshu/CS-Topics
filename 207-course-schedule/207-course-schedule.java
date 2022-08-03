@@ -8,7 +8,7 @@ class Solution {
         for(int i = 0; i<numCourses; i++) arr[i] = new ArrayList();
         
         for(int i = 0; i<prerequisites.length; i++){
-            arr[prerequisites[i][1]].add(prerequisites[i][0]);
+            arr[prerequisites[i][0]].add(prerequisites[i][1]);
         }
         
         for(int i = 0; i<numCourses; i++){
